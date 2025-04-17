@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅頌酒坊</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), #e6cfd0), url('background3.jpg') no-repeat center top;
+            background-size: cover;
+            background-color: #f5e6e8;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile {
+            margin-top: 50px;
+        }
+        .profile img {
+            width: 300px;
+        }
+        .links {
+            width: 80%;
+            max-width: 400px;
+        }
+        .link {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+        .link:hover {
+            opacity: 0.5;
+        }
+        .link img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .social {
+            margin-top: 20px;
+        }
+        .social img {
+            width: 30px;
+        }
+
+        /* 加LINE浮動按鈕樣式 */
+        .line-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: opacity 0.3s ease;
+        }
+        .line-button img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .line-button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="logo3.png" alt="Profile Picture">
+        <h2>品酩頂級葡萄酒的至尊首選</h2>
+    </div>
+    <div class="links">
+        <a href="intro.html" class="link"><img src="ERW.png" alt="">Eagle Ridge鷹冠酒莊介紹</a>
+        <a href="diamond.html" class="link"><img src="ERG.png" alt=""> Eagle Ridge, Meritage 鑽石</a>
+        <a href="gold.html" class="link"><img src="ERW.png" alt=""> Eagle Ridge, Cabernet Sauvignon金鷹</a>
+        <a href="red.html" class="link"><img src="ERR.png" alt=""> Eagle Ridge, Merlot 銀鷹紅</a>
+        <a href="whiite.html" class="link"><img src="ERS.png" alt=""> Eagle Ridge, Chardonnay 銀鷹白</a>
+        <a href="song.html" class="link"><img src="song.png" alt="">Song by Bond 頌歌介紹</a>
+    </div>
+
+    <!-- 加LINE按鈕（請替換 href 內的 LINE 加入好友連結）-->
+    <a href="https://lin.ee/dJcGQLy" target="_blank" class="line-button">
+        <img src="line-icon.png" alt="加LINE">
+    </a>
+</body>
+</html>
