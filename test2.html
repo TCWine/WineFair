@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>馨昌</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            overflow-y: auto;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .logo {
+            width: 80%;
+            max-width: 300px;
+            margin: 20px 0;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            width: 100%;
+        }
+        .image-grid .wide {
+            grid-column: span 2;
+            height: 30vh;
+        }
+        .image-grid a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 35vh;
+            overflow: hidden;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .image-grid span {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="品牌 LOGO" class="logo">
+        <div class="image-grid">
+            <a href="#" class="wide">
+                <img src="background.png" alt="Eagle Ridge鷹冠酒莊介紹">
+                <span>鷹冠酒莊介紹</span>
+            </a>
+            <a href="#">
+                <img src="T1.png" alt="Eagle Ridge, Meritage (鑽石)">
+                <span>Eagle Ridge, Meritage (鑽石)</span>
+            </a>
+            <a href="#">
+                <img src="T3.png" alt="Eagle Ridge, Cabernet Sauvignon (金鷹)">
+                <span>Eagle Ridge, Cabernet Sauvignon (金鷹)</span>
+            </a>
+            <a href="#">
+                <img src="T4.png" alt="Eagle Ridge, Merlot (銀鷹紅)">
+                <span>Eagle Ridge, Merlot <br>(銀鷹紅)</span>
+            </a>
+            <a href="#">
+                <img src="T2.png" alt="Eagle Ridge, Chardonnay (銀鷹白)">
+                <span>Eagle Ridge, Chardonnay (銀鷹白)</span>
+            </a>
+            <a href="#" class="wide">
+                <img src="background3.jpg" alt="公司介紹">
+                <span>公司介紹</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
